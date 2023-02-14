@@ -13,7 +13,7 @@
 }
 
 .product:hover>img {
-    transition: 0.5s;
+    transition: 0.4s;
     height: 210px;
     margin: 0;
 }

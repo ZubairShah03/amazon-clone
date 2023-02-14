@@ -1,12 +1,13 @@
 export const initialState = {
   basket: [],
+  user: null,
 };
 
 // Selector
 export const getBasketTotal = (basket) =>
   basket?.reduce((amount, item) => item.price + amount, 0);
 
-const reducer = (state = initialState, action) => {
+const reducer = (state, action) => {
   console.log(action);
 
   switch (action.type) {
@@ -23,17 +24,23 @@ const reducer = (state = initialState, action) => {
       let newBasket = [...state.basket];
 
       if (index >= 0) {
-        newBasket.splice(index, 1)
+        newBasket.splice(index, 1);
       } else {
         console.warn(
           `Cant remove product (id: ${action.id}) as its not in basket!`
-        );
+        )
       }
 
       return {
         ...state,
-        basket: newBasket
-      }
+        basket: newBasket,
+      };
+
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
 
     default:
       return state;

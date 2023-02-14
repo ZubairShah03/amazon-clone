@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Home.css";
+import Footer from "./Footer";
 import Product from "./Product";
 
 function Home() {
@@ -14,7 +15,7 @@ function Home() {
           <div className="carousel-inner home_image">
             <div className="carousel-item active">
               <img
-                src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+                src="https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg"
                 className="d-block w-100"
                 alt="..."
               />
@@ -28,7 +29,7 @@ function Home() {
             </div>
             <div className="carousel-item">
               <img
-                src="https://m.media-amazon.com/images/I/71tIrZqybrL._SX3000_.jpg"
+                src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
                 className="d-block w-100"
                 alt="..."
               />
@@ -106,6 +107,7 @@ function Home() {
             rating={4}
           />
         </div>
+      <Footer />
       </div>
     </div>
   );
