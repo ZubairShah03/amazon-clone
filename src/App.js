@@ -7,7 +7,6 @@ import Login from "./Components/Login";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
-import Footer from "./Components/Footer";
 
 function App() {
   const [{}, dispatch] = useStateValue();

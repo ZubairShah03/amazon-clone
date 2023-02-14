@@ -12,8 +12,6 @@ function Header() {
   const handleAuthentication = () => {
     if (user) {
       auth.signOut();
-    } else {
-      console.warn("signOut UnSuccessfull!");
     }
   };
   return (
