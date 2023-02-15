@@ -64,7 +64,7 @@ function Login(props) {
           />
 
           <button type="submit" onClick={signIn} className="login_signInButton">
-            Sing In
+            Sign In
           </button>
         </form>
 
